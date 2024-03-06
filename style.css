@@ -1,0 +1,258 @@
+*{
+    background-color: #89C15E;
+}
+#top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid green;
+    width: 730px;
+    height: 120px;
+    margin: 20px 50px 20px 250px;
+    border-radius: 28px;
+    justify-content: space-evenly;
+    
+}
+.scr{
+  font-size: 90px;
+  font-weight: 600;
+  color: rgb(37, 109, 31);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#top2{
+    
+    display: flex;
+}
+.s1{
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(13, 121, 24);
+   margin: 10px;
+ background-color:rgb(13, 121, 24);
+ height: 80px;
+ width:140px;
+}
+.s1>h3{
+    margin: 5px;
+    position: relative;
+    /* top: -10px; */
+    color: white;
+    background-color:rgb(13, 121, 24);
+
+}
+#s12,#s11{
+    margin-top: 0;
+font-size: 40px;
+}
+#r1{
+    border: none;
+    border-radius: 60%;
+    height: 150px;
+    background-image: url('rock.png');
+    width: 150px;
+    background-size: cover;
+    position: relative;
+    left: 320px;
+    top: 80px;
+}
+#p3{
+    background-image: url('paper.png');
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 450px;
+    top: 80px;
+    border: none;
+    border-radius: 60%;
+}
+#s2{
+    background-size: cover;
+    background-image: url('scissor.png');
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left:400px;
+    top: 250px;
+    border: none;
+    border-radius: 60%;
+}
+
+
+
+#rules{
+    position: fixed;
+    font-size: 20px;
+    font-weight: 800;
+    bottom: 30px;
+    right: 20px;
+    float: right;
+   border: 6px solid green;
+   border-radius: 15px;
+}
+#plyAgn{
+    border:green solid 8px;
+    font-size: 30px;
+    position: relative;
+top: 220px;
+float: right;
+right: 20px;
+color: white;
+}
+#next{
+    position: fixed;
+    font-size: 20px;
+    font-weight: 800;
+    bottom: 30px;
+    right: 110px;
+    float: right;
+   border: 6px solid green;
+   border-radius: 15px;
+}
+.p1{
+    background-color: rgb(231, 255, 47);
+    list-style-type: circle;
+}
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 9999;
+}
+
+.modal{
+    position: relative;
+    top: 200px;
+    right: 50px;
+    float: right;
+    border: 8px solid rgb(13, 121, 24);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+    height: auto;
+    background-color: rgb(231, 255, 47);
+    z-index: 9999;
+}
+#abc{
+    display: block;
+}
+.close{
+     font-size:5rem ;
+   font-weight: bold;
+    border-radius: 50%;
+    padding: 0px 20px;
+    text-align: center;
+    background-color: brown;
+    border: black solid 5px;
+float: right;
+position: relative;
+top: -50px;
+right: -50px;
+}
+.close:hover {
+  color: black;
+  background-color: rgb(237, 13, 13);
+  text-decoration: none;
+  cursor: pointer;
+}
+#resultWin{
+    display: flex;
+    width: 700px;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+#meSlct{
+    border: none;
+    border-radius: 60%;
+    height: 150px;
+    background-image: url('https://png.pngtree.com/png-vector/20191130/ourmid/pngtree-rock-icon-circle-png-image_2056020.jpg');
+    width: 150px;
+    background-size: cover;
+    position: relative;
+    left: 250px;
+    top: 80px;
+}
+
+#PcSlct{
+    border: none;
+    border-radius: 60%;
+    height: 150px;
+    background-image: url('https://png.pngtree.com/png-vector/20191130/ourmid/pngtree-rock-icon-circle-png-image_2056020.jpg');
+    width: 150px;
+    background-size: cover;
+    position: relative;
+    left: 320px;
+    top: 80px;
+}
+#result{
+    display: flex;
+   flex-direction: column;
+    position: relative;
+    left: 300px;
+}
+#result h1{
+    /* border: 3px solid black; */
+    padding: 30px;
+    left: px;
+    top: 50px;
+    position: relative;
+    color: white;
+    height: 100px;
+    font-size: 50px;
+}
+#result button{
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border: 3px green solid;
+    border-radius: 5px;
+    margin: 40px;
+}
+.pick-container {
+    text-align: center; /* Aligns text and image to the center */
+}
+
+.res {
+    margin-bottom: 5px;
+    position: relative;
+    left: 240px;
+    top: 60px; 
+    margin-left: 80px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.image-container {
+    position: relative;
+}
+
+#star,
+#cup {
+    position: absolute;
+    top: 6px;
+    left: 450px;
+}
+
+#cup {
+    z-index: 1;
+    top: 100px;
+    left: 600px; /* Ensure the cup is above the star */
+}
+.hurray{
+    text-align: center;
+    position: relative;
+    top: 300px;
+    left: 40px;
+   font-size: 70px;
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
